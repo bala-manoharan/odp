@@ -29,6 +29,8 @@ extern "C" {
 
 typedef int odp_bool_t;
 
+typedef uint16_t odp_percent_t;
+
 /**
  * @}
  */
