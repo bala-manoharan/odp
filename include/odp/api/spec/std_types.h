@@ -32,6 +32,14 @@ extern "C" {
  */
 
 /**
+ * @typedef odp_percent_t
+ * Use odp_percent_t for specifying fields that are percentages. It is a fixed
+ * point integer whose units are expressed as one-hundredth of a percent.
+ * Hence 100% is represented as integer value 10000.
+ */
+
+typedef uint32_t odp_percent_t;
+/**
  * @}
  */
 
