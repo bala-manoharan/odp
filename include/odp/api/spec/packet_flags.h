@@ -249,6 +249,14 @@ int odp_packet_has_ipsec(odp_packet_t pkt);
  */
 int odp_packet_has_udp(odp_packet_t pkt);
 
+/** Check for VXLAN
+ *
+ * @param pkt Packet handle
+ * @retval non-zero if packet contains VXLAN header
+ * @retval 0 if packet does not contain a VXLAN header
+ */
+int odp_packet_has_vxlan(odp_packet_t pkt);
+
 /**
  * Check for TCP
  *
@@ -440,6 +448,14 @@ void odp_packet_has_ipsec_set(odp_packet_t pkt, int val);
  * @param val Value
  */
 void odp_packet_has_udp_set(odp_packet_t pkt, int val);
+
+/**
+ * Set flag for VXLAN
+ *
+ * @param pkt Packet handle
+ * @param val Value
+ */
+void odp_packet_has_vxlan_set(odp_packet_t pkt, int val);
 
 /**
  * Set flag for TCP
